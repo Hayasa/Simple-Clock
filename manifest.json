@@ -1,10 +1,9 @@
     {
-        "version": "0.1.0.1",
+        "version": "1.0",
         "manifest_version": 2,
         "name": "Simple Clock",
-            "permissions": [
-        "storage"
-    ],
+        "description": "Show popup analog clock.",
+    
     "browser_action": {
         "browser_style": true,
         "default_title": "Clock",

@@ -1,0 +1,74 @@
+body {
+  background-color: coral;
+}
+.clock {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50px;
+  
+  position: relative;
+}
+
+.main {
+  position: absolute;
+  width: 3px;
+  height: 40px;
+  background-color: black;
+  
+  bottom: 99px;
+  left: 99px;
+  transform-origin: 50% 100%;
+}
+
+.minute {
+  height: 75px;
+  background-color: green;
+}
+
+.second {
+  height: 90px;
+  background-color: orange;
+}
+
+.time {
+    color:red;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.clock ul{
+    list-style: none;
+    padding: 0;
+
+}
+.clock ul li{
+    position: absolute;
+    width:20px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    color:red;
+}
+.clock ul li:nth-child(1){
+    left: 45%;
+    top:4%;
+}
+
+.clock ul li:nth-child(2){
+    left: 90%;
+    bottom:45%;
+}
+
+.clock ul li:nth-child(3){
+    right: 45%;
+    bottom:4%;
+}
+
+.clock ul li:nth-child(4){
+    right: 90%;
+    bottom:45%;
+}
+
+
